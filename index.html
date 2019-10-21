@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ubícanos</title>
+	<link rel="stylesheet" href="style.css" media="screen">
+	<!-- Agregar la librería de Google Maps API -->
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDhAvaDkXlBzxA3fn0sWs06WvTXXnpMnI0"></script>
+	<script src="util.js" type="text/javascript" ></script>
+</head>
+
+<body>
+	<div id="divMapa">
+	</div>
+	<br/>
+	<br/>
+	<br/>
+	<div class="tab">
+	  <button class="tablinks" onclick="openTab(event, 'divVentanilla')">Ventanilla</button>
+	  <button class="tablinks" onclick="openTab(event, 'divPlataforma')">Plataforma</button>
+	</div>
+	<div id="divVentanilla" class="tabcontent">
+		<div>
+			<table border="1">
+				<thead>
+					<th>Código</th>
+					<th>Agencia</th>
+					<th>Tiempo</th>
+				</thead>
+				<tbody id="tbodyVentanilla">
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div id="divPlataforma" class="tabcontent">
+		  <div>
+				<table border="1">
+					<thead>
+						<th>Código</th>
+						<th>Agencia</th>
+						<th>Tiempo</th>
+					</thead>
+					<tbody id="tbodyPlataforma">
+					</tbody>
+				</table>
+			</div>
+	</div>
+</body>
+</html>
